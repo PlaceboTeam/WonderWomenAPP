@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}	
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.app {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    align-items: center;
+    background: #fff;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+
+}
+.form {
+	position: fixed;
+	left: 10;
+	right: 10;
+	bottom: 0;
+	/* background: rgba(0,0,0, .15); */
+	padding: 5px;
+	display: flex;
+    width: 900px;
+	height: 50px;
+	align-items: center;
+	backdrop-filter: blur(10px);
+    display: flex;
+}
+.name {
+	/* height: 35px;
+	background: beige;
+	padding: 15px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;    
+	align-items: center;
+	color: #222;
+	font-size: 12px;
+	font-weight: 400; */
+
+    padding: 10px 20px;
+    height: 40px;
+    background: #111;
+    outline: none;
+    border: none;
+    padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+ .btn {
+    padding: 10px 20px;
+    background: #111;
+    color: #eee;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.messages {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.messages > li {
+	padding: 10px;
+}
+.messages > li > span {
+	font-weight: 500;
+}
+.messages > li:nth-child(odd) {
+	background: #efefef;
+}
+
+.header {
+    background: #111;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.header .logo{
+    font-size: 18px;
+    color: #eee;
+    font-weight: 600;
+
+}
+.header button{
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    background: transparent;
+    color: #eee;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+ .typebox {
+    width: 100%;
+    /* height: 30px; */
+    padding: 0.5px ;
+    display: flex;
+    align-items: center;
+}
+.typebox input{
+    flex: 1;
+    height: 40px;
+    font-size: 18px;
+    padding: 2px ;
+} 
+/* .typebox button{
+    width: 80px;
+    height: 50px;
+    background: #111;
+    color: #eee;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;    
+}  */
+
+.messages {
+    width: 100%;
+    height: calc(100% - 100px);
+    
+    overflow: auto;   
+}
+.messages .message{
+    display: flex;
+    padding: 20px;
+}
+.messages .message > div{
+    max-width: 90%;
+    background: #fff;   
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
+    padding: 10px;
+}
+.messages .message.my-message {
+    justify-content: flex-end;
+    
+}
+
+.messages .message.my-message > div{
+    background: rgb(225, 71, 71);
+    color: #fff;
+}
+.messages .message.other-message {
+    justify-content: flex-start;
+}
+.messages .message.other-message > div {
+    background: rgb(96, 239, 48);
+    color: #fff;
+}
